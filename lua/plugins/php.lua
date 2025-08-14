@@ -40,6 +40,7 @@ return {
     "adalessa/laravel.nvim",
     cmd = { "Sail", "Artisan", "Composer", "Npm", "Yarn", "Laravel" },
     dependencies = {
+      "kevinhwang91/promise-async",
       "nvim-telescope/telescope.nvim",
       "tpope/vim-dotenv",
       "MunifTanjim/nui.nvim",
