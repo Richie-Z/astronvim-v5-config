@@ -13,12 +13,12 @@ return {
     })
     opts.indent = {
       enable = true,
-      -- disable = { "dart" },
+      disable = { "dart" },
     }
     opts.textobjects = {
       select = {
         enable = true,
-        -- disable = { "dart" },
+        disable = { "dart" },
       },
     }
   end,
