@@ -56,7 +56,7 @@ return {
       desc = "Show outline",
     },
     ["<C-p>"] = {
-      function() require("snacks").picker.files { hidden = true, ignored = true } end,
+      function() require("snacks").picker.files { hidden = false, ignored = false } end,
       desc = "Find files",
     },
   },
