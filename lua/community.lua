@@ -17,7 +17,7 @@ return {
 
   -- Completion
   -- { import = "astrocommunity.completion.codeium-nvim" },
-  { import = "astrocommunity.completion.copilot-lua-cmp" },
+  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 
   -- Icons
   { import = "astrocommunity/icon/mini-icons" },
