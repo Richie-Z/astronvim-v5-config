@@ -4,8 +4,6 @@ return {
   -- UI
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.color.tint-nvim" },
-  { import = "astrocommunity.bars-and-lines.dropbar-nvim" },
-  { import = "astrocommunity.bars-and-lines.lualine-nvim" },
   { import = "astrocommunity.recipes.telescope-lsp-mappings" },
 
   -- LSP
@@ -16,8 +14,6 @@ return {
   { import = "astrocommunity.git.blame-nvim" },
 
   -- Completion
-  -- { import = "astrocommunity.completion.codeium-nvim" },
-  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 
   -- Icons
   { import = "astrocommunity/icon/mini-icons" },
