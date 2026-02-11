@@ -1,5 +1,5 @@
 ---@type LazySpec
-return {
+local spec = {
   "AstroNvim/astrocommunity",
   -- UI
   { import = "astrocommunity.colorscheme.catppuccin" },
@@ -33,17 +33,17 @@ return {
   { import = "astrocommunity.motion.marks-nvim" },
 
   -- Packs
-  { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.html-css" },
-  { import = "astrocommunity.pack.typescript" },
-  { import = "astrocommunity.pack.go" },
-  { import = "astrocommunity.pack.dart" },
-  { import = "astrocommunity.pack.markdown" },
-  { import = "astrocommunity.pack.blade" },
-  { import = "astrocommunity.pack.vue" },
   { import = "astrocommunity.pack.tailwindcss" },
-  { import = "astrocommunity.pack.java" },
-  { import = "astrocommunity.pack.kotlin" },
-  { import = "astrocommunity.pack.cs-omnisharp" },
+  { import = "astrocommunity.pack.biome" },
 }
+
+if not os.getenv "SSH_TTY" then
+  local local_packs = { "go", "dart", "markdown", "blade", "vue", "java", "kotlin", "bash" }
+  for _, pack in ipairs(local_packs) do
+    table.insert(spec, { import = "astrocommunity.pack." .. pack })
+  end
+end
+
+return spec
