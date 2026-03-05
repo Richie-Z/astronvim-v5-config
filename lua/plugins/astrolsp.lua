@@ -21,6 +21,10 @@ return {
     formatting = {
       async = false,
       timeout_ms = 1000,
+      filter = function(client)
+        if vim.bo.filetype == "pug" then return client.name == "prettier" end
+        return true
+      end,
     },
   },
 }

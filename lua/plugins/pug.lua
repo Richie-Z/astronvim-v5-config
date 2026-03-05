@@ -44,22 +44,6 @@ return {
   },
 
   {
-    "stevearc/conform.nvim",
-    event = { "BufReadPre", "BufNewFile" },
-    config = function()
-      require("conform").setup {
-        format_on_save = {
-          timeout_ms = 1000,
-          lsp_format = "fallback",
-        },
-        formatters_by_ft = {
-          pug = { "prettier" },
-        },
-      }
-    end,
-  },
-
-  {
     "jay-babu/mason-null-ls.nvim",
     optional = true,
     opts = function(_, opts)
